@@ -10,7 +10,7 @@ mjpg.MjpgServerThread(
 
 ser = serial.Serial("/dev/ttyS1", 115200)    # 连接串口
 
-
+start_time = time.time()
 def check_key():
     import os
     tmp = "/dev/input/by-path/"
